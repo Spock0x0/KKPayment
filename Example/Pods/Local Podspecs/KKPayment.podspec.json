@@ -1,0 +1,27 @@
+{
+  "name": "KKPayment",
+  "version": "0.1.0",
+  "summary": "A short description of KKPayment.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Spock/KKPayment",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Spock": "spock.hsueh@kkday.com"
+  },
+  "source": {
+    "git": "https://github.com/Spock/KKPayment.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "KKPayment/Classes/**/*",
+  "dependencies": {
+    "PromiseKit": [
+
+    ]
+  }
+}

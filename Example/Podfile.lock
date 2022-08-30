@@ -1,0 +1,31 @@
+PODS:
+  - KKPayment (0.1.0):
+    - PromiseKit
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.18.1):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - KKPayment (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - PromiseKit
+
+EXTERNAL SOURCES:
+  KKPayment:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KKPayment: 7c04fa8f45cc1c009d095c9e36cb16f3a6bd43e4
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+
+PODFILE CHECKSUM: fd5a252dd63c5e53b197487731f31c6e0782616f
+
+COCOAPODS: 1.11.3
