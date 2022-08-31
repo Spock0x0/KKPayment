@@ -1,5 +1,5 @@
 import XCTest
-import KKPayment
+
 
 class Tests: XCTestCase {
     

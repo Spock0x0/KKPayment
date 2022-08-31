@@ -8,21 +8,22 @@
 import Foundation
 import PromiseKit
 
-public protocol PaymentChannelStrategy {
+/// Description
+/// pmchCodeForB2CServer: call B2C API
+/// pmchCode: response from B2C API
+/// is3D: is payment channel should using 3D verify
+/// isHRP: is this channel for High Risk Product, e.g. Y, N
+protocol PaymentChannelStrategy {
     var id: String { get }
     
-    /// call B2C API
     static var pmchCodeForB2CServer: String { get }
-    
-    /// pmchCode which response from B2C API
+        
     var pmchCode: String { get }
     
     var receiveMethod: String { get }
     
-    /// is payment channel should using 3D verify
     var is3D: Bool { get }
-    
-    /// is this channel for High Risk Product, e.g. Y, N
+        
     var isHRP: String  { get }
     
     var currency: Currency  { get }
@@ -35,14 +36,33 @@ public protocol PaymentChannelStrategy {
     
     var encryptedData: Data?  { get set }
     
-//    var card: CreditCard? { get set }
-//    
-//    var paymentFlowEventDelegate: PaymentFlowEventDelegate? { get set }
-//    
-//    init?(initParameters: PaymentStrategyInitializeParameters)
+    var card: CreditCard? { get set }
+
+    var paymentFlowEventDelegate: PaymentFlowEventDelegate? { get set }
+
+    init?(initParameters: PaymentStrategyInitializeParameters)
     
     // TODO
     func makePayment(
     ) -> Promise<Void>
 }
 
+struct PaymentStrategyInitializeParameters {
+    public var id: String
+    
+    public let pmchCode: String
+    
+    public let receiveMethod: String
+    
+    public var is3D: Bool
+    
+    public var isHRP: String
+    
+    public var currency: Currency
+    
+    public var additionalSettingDictionary: JsonDictionary
+    
+    public var encryptedData: Data?
+    
+    public weak var paymentFlowEventDelegate: PaymentFlowEventDelegate?
+}
