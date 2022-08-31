@@ -1,6 +1,7 @@
 PODS:
   - KKPayment (0.1.0):
     - PromiseKit
+    - Stripe
   - PromiseKit (6.18.1):
     - PromiseKit/CorePromise (= 6.18.1)
     - PromiseKit/Foundation (= 6.18.1)
@@ -10,6 +11,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.18.1):
     - PromiseKit/CorePromise
+  - Stripe (19.4.1)
 
 DEPENDENCIES:
   - KKPayment (from `../`)
@@ -17,14 +19,16 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - PromiseKit
+    - Stripe
 
 EXTERNAL SOURCES:
   KKPayment:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KKPayment: 7c04fa8f45cc1c009d095c9e36cb16f3a6bd43e4
+  KKPayment: 4ecb785dea8b89749a31c668ac8a7c6c990f5744
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+  Stripe: 5914399ac5878056b985d56b409cb4bb1e7fc7e8
 
 PODFILE CHECKSUM: fd5a252dd63c5e53b197487731f31c6e0782616f
 
