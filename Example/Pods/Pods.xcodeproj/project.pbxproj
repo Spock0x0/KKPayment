@@ -32,7 +32,7 @@
 		5BED16201A0CC3EF62FB869470024550 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A0877B25FF47A1B5FF12016CF38350 /* PromiseKit-dummy.m */; };
 		67B686EE42A9047D8BAD9DF0FDED73A1 /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6516127E068CF0A69058A44B2A59EC /* UIViewPropertyAnimator+Promise.swift */; };
 		682F6D8E2C0E17331D4E8976107191FF /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04D3C85C3592C22FA146322D8BB30A /* Promise.swift */; };
-		6AD2875328BDA77400FFC915 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2875228BDA77400FFC915 /* test.swift */; };
+		6A67F7EA28BF45DC0028DC16 /* PaymentChannelStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A67F7E928BF45DC0028DC16 /* PaymentChannelStrategy.swift */; };
 		6C2519690CF2F3177987F18E06288FB6 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB2109EDDD216A430CA1F339EE9DC0 /* when.swift */; };
 		77F395CB84D8E031A95E9A7335B02768 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCFEBCB7E58E5AAFEB381971940043 /* hang.swift */; };
 		77FAE0827CC0B5D0D8E9FEAF269FC7FD /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC67FA23C2422616ECC782540FD0357 /* race.m */; };
@@ -42,7 +42,6 @@
 		86BCFAE77F9620C2C5F62BD2881C85A5 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFCAED181EF8E8D69FAEA9849DFD1B5 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B91C00D5D46DAA026B7FEA55E1631C4 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = BB750C246AC75F428FB42361C7AD3718 /* NSTask+AnyPromise.m */; };
 		8DEF2CD2FE266EA0F5CD637ECC143AC8 /* Pods-KKPayment_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F76997B9C613C79451B4725F3F187C8 /* Pods-KKPayment_Example-dummy.m */; };
-		9364D65A726F6D5F8B8CBA15FDE68D56 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DDEDB6021FD47C0397A9846CB9B95D /* ReplaceMe.swift */; };
 		9E69D68D04572B2AC030CDC2BDB7F9DF /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B1A0E91EE0E206727F2E47E29EF50 /* race.swift */; };
 		A5BF3576501EA9F4EC6F1014FB883893 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C099701DFA8498D450B5C02D01884C5 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE5572025271D7ADA4E06CA107BD1D28 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDD6379B5E52C1FAE0DA87A508D4C59 /* after.m */; };
@@ -132,7 +131,7 @@
 		6304DD8EC3D90562AC0938B58FED4750 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
 		6867089D94E781C411C7FD0420192A3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		68EA341C580CC92FB97CDF56C56A5799 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
-		6AD2875228BDA77400FFC915 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		6A67F7E928BF45DC0028DC16 /* PaymentChannelStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentChannelStrategy.swift; sourceTree = "<group>"; };
 		6EFF535CD50A9F1EFDF197A0AD6DD394 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		6F9DA81D56CFCAEF3285679DB08A58AE /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		7554EE37DC3E96C0B6AEC2B899C90848 /* Pods-KKPayment_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPayment_Example-Info.plist"; sourceTree = "<group>"; };
@@ -147,7 +146,7 @@
 		8C14576D78B75FC07E081BAFDA6E4EA5 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
 		8D22E33AE8ED16BF4CBB424FEB937AAB /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		9257CB4E50E294E647200A9A4D0E662A /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
-		93530143DD251CC425806731E89DCD47 /* KKPayment */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KKPayment; path = KKPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93530143DD251CC425806731E89DCD47 /* KKPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956D382625F1532BE0188509C30F42D3 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
 		9BB1670415EADC6C21803349B23F388A /* Pods-KKPayment_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPayment_Tests-Info.plist"; sourceTree = "<group>"; };
 		9C36699BA7E3585F70C2330393238D93 /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
@@ -157,7 +156,6 @@
 		A2312E98AC7566801ED1FABBC59593A3 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
 		A548336D49857D85C01A546AF8E5DBE9 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
 		A850926F424C8574A4235AE2D3996B37 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		A9DDEDB6021FD47C0397A9846CB9B95D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = KKPayment/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		AC2233EC5F51D658EA82C14BED92036D /* KKPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKPayment.debug.xcconfig; sourceTree = "<group>"; };
 		ACDD6379B5E52C1FAE0DA87A508D4C59 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		AF449ECBBF270D5776A5FBD3B720A682 /* Pods-KKPayment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPayment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -255,10 +253,9 @@
 		11A0B373B65B3F3E0A2E4B3AFF013FA7 /* KKPayment */ = {
 			isa = PBXGroup;
 			children = (
-				A9DDEDB6021FD47C0397A9846CB9B95D /* ReplaceMe.swift */,
+				6A67F7E828BF45DC0028DC16 /* FoundationLayer */,
 				A62AD30EDB10684D1358940B7083C91D /* Pod */,
 				185977057E740A51A837246135B19477 /* Support Files */,
-				6AD2875228BDA77400FFC915 /* test.swift */,
 			);
 			name = KKPayment;
 			path = ../..;
@@ -309,7 +306,7 @@
 		28C9D8C5C7A9D8903CC156A7FB258FFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93530143DD251CC425806731E89DCD47 /* KKPayment */,
+				93530143DD251CC425806731E89DCD47 /* KKPayment.framework */,
 				DBE30DDD79D2ED8EAC3D717662B677F4 /* Pods-KKPayment_Example */,
 				0DF38F4DBCCB9C2EB36E2B7EDFBCD155 /* Pods-KKPayment_Tests */,
 				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit */,
@@ -365,6 +362,15 @@
 			);
 			name = "Pods-KKPayment_Example";
 			path = "Target Support Files/Pods-KKPayment_Example";
+			sourceTree = "<group>";
+		};
+		6A67F7E828BF45DC0028DC16 /* FoundationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6A67F7E928BF45DC0028DC16 /* PaymentChannelStrategy.swift */,
+			);
+			name = FoundationLayer;
+			path = KKPayment/Classes/FoundationLayer;
 			sourceTree = "<group>";
 		};
 		6AFF4390DF2DADF8C346ACFF55343AAA /* UIKit */ = {
@@ -582,7 +588,7 @@
 			);
 			name = KKPayment;
 			productName = KKPayment;
-			productReference = 93530143DD251CC425806731E89DCD47 /* KKPayment */;
+			productReference = 93530143DD251CC425806731E89DCD47 /* KKPayment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -593,6 +599,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E9A851077FA180E502F6A3BFCB9D11CA = {
+						LastSwiftMigration = 1320;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -713,8 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF9992F45B7515F71B70D90A2413022 /* KKPayment-dummy.m in Sources */,
-				6AD2875328BDA77400FFC915 /* test.swift in Sources */,
-				9364D65A726F6D5F8B8CBA15FDE68D56 /* ReplaceMe.swift in Sources */,
+				6A67F7EA28BF45DC0028DC16 /* PaymentChannelStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +829,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C6E7611B00981BA86C63C3DD1B9D78A /* KKPayment.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -912,6 +923,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC2233EC5F51D658EA82C14BED92036D /* KKPayment.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -932,6 +944,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
