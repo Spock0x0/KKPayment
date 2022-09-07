@@ -47,7 +47,7 @@ protocol PaymentChannelStrategy {
     ) -> Promise<Void>
 }
 
-struct PaymentStrategyInitializeParameters {
+public struct PaymentStrategyInitializeParameters {
     public var id: String
     
     public let pmchCode: String

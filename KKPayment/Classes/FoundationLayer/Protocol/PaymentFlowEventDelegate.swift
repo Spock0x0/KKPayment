@@ -7,19 +7,19 @@
 
 import Foundation
 
-protocol PaymentFlowEventDelegate: AnyObject {
+public protocol PaymentFlowEventDelegate: AnyObject {
     func begin(event: PaymentFlowBeginEvent)    
     func executing(event: PaymentFlowExecutingEvent)
     func cancelled()
     func completed()
 }
 
-enum PaymentFlowBeginEvent {
+public enum PaymentFlowBeginEvent {
     case start
     case done
 }
 
 // TODO
-enum PaymentFlowExecutingEvent {
+public enum PaymentFlowExecutingEvent {
     
 }
