@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-protocol PaymentPagePresentDelegate {
+public protocol PaymentPagePresentDelegate {
     func presentBySafari(url: URL,
                          paymentNotificationName: Notification.Name,
                          safariViewDidFinish: (() -> Void)?) -> Promise<URL>

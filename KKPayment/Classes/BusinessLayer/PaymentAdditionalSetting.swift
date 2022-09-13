@@ -7,8 +7,10 @@
 
 import Foundation
 
-// For customized third-party settings
-
-// TODO
+/// Customized third-party settings
 public enum PaymentAdditionalSetting {
+    case stripe(publicKey: String)
+    case tapPay(appId: String, appKey: String, isSandbox: Bool)
+    case adyen(publicKey: String, isComponents: Bool, methods: Data)
+    case none
 }
