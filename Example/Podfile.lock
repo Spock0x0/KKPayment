@@ -1,6 +1,7 @@
 PODS:
   - KKPayment (0.1.0):
     - PromiseKit
+    - SnapKit
     - Stripe
   - PromiseKit (6.18.1):
     - PromiseKit/CorePromise (= 6.18.1)
@@ -11,6 +12,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.18.1):
     - PromiseKit/CorePromise
+  - SnapKit (5.6.0)
   - Stripe (19.4.1)
 
 DEPENDENCIES:
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - PromiseKit
+    - SnapKit
     - Stripe
 
 EXTERNAL SOURCES:
@@ -26,10 +29,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KKPayment: 4ecb785dea8b89749a31c668ac8a7c6c990f5744
+  KKPayment: 72d49380fa28cd37f82b4e94e3905265c17e041d
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Stripe: 5914399ac5878056b985d56b409cb4bb1e7fc7e8
 
-PODFILE CHECKSUM: fd5a252dd63c5e53b197487731f31c6e0782616f
+PODFILE CHECKSUM: 54169ecaf2a51b87d3a012020cb96661ac4a2367
 
 COCOAPODS: 1.11.3
