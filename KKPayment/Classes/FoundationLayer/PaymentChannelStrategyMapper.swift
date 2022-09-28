@@ -38,9 +38,7 @@ struct PaymentChannelStrategyMapper {
     func getAllRegisteredCodes() -> [RegisterCode] {
         return Array(strategyFactories.keys)
     }
-    
-    // TODO
-    // what this actually doing?
+        
     /// Get Payment Channel Registered Code with pmchCode From Server.
     ///
     /// Take JKO payment for example:

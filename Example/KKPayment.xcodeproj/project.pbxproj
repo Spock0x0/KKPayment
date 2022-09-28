@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6A83969E28D85DAA00FF6134 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969628D85DAA00FF6134 /* HomeCell.swift */; };
+		6A83969F28D85DAA00FF6134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A83969728D85DAA00FF6134 /* Images.xcassets */; };
+		6A8396A028D85DAA00FF6134 /* HomeCellVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969828D85DAA00FF6134 /* HomeCellVIewModel.swift */; };
+		6A8396A128D85DAA00FF6134 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969928D85DAA00FF6134 /* HomeViewController.swift */; };
+		6A8396A228D85DAA00FF6134 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969A28D85DAA00FF6134 /* RowViewModel.swift */; };
+		6A8396A328D85DAA00FF6134 /* JKODemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969B28D85DAA00FF6134 /* JKODemoViewController.swift */; };
+		6A8396A428D85DAA00FF6134 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969C28D85DAA00FF6134 /* DataServices.swift */; };
+		6A8396A528D85DAA00FF6134 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83969D28D85DAA00FF6134 /* Material.swift */; };
 		9A1DFED8DD6145FF91A52DFB /* Pods_KKPayment_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63EED849D2C381F4A4A25F5 /* Pods_KKPayment_Example.framework */; };
 		DA520BA8CC72677B5D5D1119 /* Pods_KKPayment_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99D7EB78C9D7C36458AC9B /* Pods_KKPayment_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -31,21 +38,28 @@
 		0324FD156D4FAC9965051885 /* Pods-KKPayment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPayment_Tests.release.xcconfig"; path = "Target Support Files/Pods-KKPayment_Tests/Pods-KKPayment_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		061B12FFD9AF06F666FD9697 /* Pods-KKPayment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPayment_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KKPayment_Tests/Pods-KKPayment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C8EDC1E47324690B7BB3958 /* Pods-KKPayment_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPayment_Example.debug.xcconfig"; path = "Target Support Files/Pods-KKPayment_Example/Pods-KKPayment_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4B0F62B1933B1AA90CD51936 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4B0F62B1933B1AA90CD51936 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		543DB70EDEC120704E8A3813 /* Pods-KKPayment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPayment_Example.release.xcconfig"; path = "Target Support Files/Pods-KKPayment_Example/Pods-KKPayment_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KKPayment_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKPayment_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* KKPayment_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKPayment_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		83A909068C44A81EC7F43600 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6A83969628D85DAA00FF6134 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		6A83969728D85DAA00FF6134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A83969828D85DAA00FF6134 /* HomeCellVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellVIewModel.swift; sourceTree = "<group>"; };
+		6A83969928D85DAA00FF6134 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6A83969A28D85DAA00FF6134 /* RowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
+		6A83969B28D85DAA00FF6134 /* JKODemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKODemoViewController.swift; sourceTree = "<group>"; };
+		6A83969C28D85DAA00FF6134 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		6A83969D28D85DAA00FF6134 /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		83A909068C44A81EC7F43600 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BA99D7EB78C9D7C36458AC9B /* Pods_KKPayment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKPayment_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D64FDF2F1BBCB4BEB1791B33 /* KKPayment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KKPayment.podspec; path = ../KKPayment.podspec; sourceTree = "<group>"; };
+		D64FDF2F1BBCB4BEB1791B33 /* KKPayment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KKPayment.podspec; path = ../KKPayment.podspec; sourceTree = "<group>"; };
 		F63EED849D2C381F4A4A25F5 /* Pods_KKPayment_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKPayment_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,7 +91,6 @@
 				061B12FFD9AF06F666FD9697 /* Pods-KKPayment_Tests.debug.xcconfig */,
 				0324FD156D4FAC9965051885 /* Pods-KKPayment_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,7 +128,14 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				6A83969C28D85DAA00FF6134 /* DataServices.swift */,
+				6A83969628D85DAA00FF6134 /* HomeCell.swift */,
+				6A83969828D85DAA00FF6134 /* HomeCellVIewModel.swift */,
+				6A83969928D85DAA00FF6134 /* HomeViewController.swift */,
+				6A83969728D85DAA00FF6134 /* Images.xcassets */,
+				6AFF299C28D98E7B000C2AE7 /* JKO */,
+				6A83969D28D85DAA00FF6134 /* Material.swift */,
+				6A83969A28D85DAA00FF6134 /* RowViewModel.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -158,6 +178,14 @@
 				83A909068C44A81EC7F43600 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6AFF299C28D98E7B000C2AE7 /* JKO */ = {
+			isa = PBXGroup;
+			children = (
+				6A83969B28D85DAA00FF6134 /* JKODemoViewController.swift */,
+			);
+			name = JKO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +255,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				6A83969F28D85DAA00FF6134 /* Images.xcassets in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -271,12 +301,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-KKPayment_Example/Pods-KKPayment_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KKPayment/KKPayment.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KKPayment.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,8 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				6A8396A128D85DAA00FF6134 /* HomeViewController.swift in Sources */,
+				6A8396A528D85DAA00FF6134 /* Material.swift in Sources */,
+				6A83969E28D85DAA00FF6134 /* HomeCell.swift in Sources */,
+				6A8396A428D85DAA00FF6134 /* DataServices.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6A8396A028D85DAA00FF6134 /* HomeCellVIewModel.swift in Sources */,
+				6A8396A228D85DAA00FF6134 /* RowViewModel.swift in Sources */,
+				6A8396A328D85DAA00FF6134 /* JKODemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +446,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -423,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -461,6 +501,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -469,8 +511,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -482,13 +525,17 @@
 			baseConfigurationReference = 0C8EDC1E47324690B7BB3958 /* Pods-KKPayment_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = KKPayment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -497,13 +544,17 @@
 			baseConfigurationReference = 543DB70EDEC120704E8A3813 /* Pods-KKPayment_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				INFOPLIST_FILE = KKPayment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

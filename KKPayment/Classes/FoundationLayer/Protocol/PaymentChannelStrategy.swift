@@ -50,20 +50,21 @@ public protocol PaymentChannelStrategy {
     var acceptedCardTypes: [CreditCardType] { get set }
 
     var paymentFlowEventDelegate: PaymentFlowEventDelegate? { get set }
+    
+    mutating func updateCreditCard(with card: CreditCard?)
+    
+    mutating func updateEncryptedData(with encryptedData: Data?)
 
     init?(initParameters: PaymentStrategyInitializeParameters)
     
-    // TODO
-    func makePayment<T>(
-        auth: T,
-        userSelectedCurrency: Currency,
-        orderData: PaymentService.OrderData,
-        cartItemsData: PaymentService.ProductData,
-        paymentStatusLogGroupId: Int?,
-        paymentPagePresenter: PaymentPagePresentDelegate
-    ) -> Promise<Void>
     
-    func isPaymentAppOrServiceSupported() -> Bool
+    /// public interactive interface
+    /// call API
+    func makePayment() -> Void
+    
+    /// public interactive interface
+    /// make payment result
+    func paymentResponse() -> Void
 }
 
 public struct PaymentStrategyInitializeParameters {
@@ -87,7 +88,7 @@ public struct PaymentStrategyInitializeParameters {
     
     public weak var paymentFlowEventDelegate: PaymentFlowEventDelegate?
     
-    init (
+    public init (
         id: String,
         pmchCode: String,
         receiveMethod: String,
@@ -108,6 +109,16 @@ public struct PaymentStrategyInitializeParameters {
         self.additionalSettingDictionary = additionalSettingDictionary
         self.encryptedData = encryptedData
         self.acceptedCardTypes = acceptedCardTypes
-        self.paymentFlowEventDelegate = paymentFlowEventDelegate
+        self.paymentFlowEventDelegate = paymentFlowEventDelegate        
+    }
+}
+
+public extension PaymentChannelStrategy {
+    mutating func updateCreditCard(with card: CreditCard?) {
+        self.card = card
+    }
+    
+    mutating func updateEncryptedData(with encryptedData: Data?) {
+        self.encryptedData = encryptedData
     }
 }

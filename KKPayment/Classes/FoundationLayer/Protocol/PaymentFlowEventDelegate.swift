@@ -19,7 +19,11 @@ public enum PaymentFlowBeginEvent {
     case done
 }
 
-// TODO
 public enum PaymentFlowExecutingEvent {
-    
+    case prepareToCallPaymentAuthAPI
+    case didGetPaymentAuthData
+    case prepareRedirectToPay
+    case didGetResponseFromThirdParty
+    case prepareToCallPaymentReturnAPI
+    case didGetPaymentReturnData
 }

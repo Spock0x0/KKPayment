@@ -7,14 +7,15 @@
 
 import Foundation
 import PromiseKit
+import WebKit
 
-public class JKOPaymentStrategy: PaymentChannelStrategy {
+public class JKOPaymentStrategy: NSObject, PaymentChannelStrategy {
     
     public var id: String
     
     public static var pmchCodeForB2CServer = "JKO"
     
-    public var paymentName: String
+    public var paymentName: String = "JKO"
     
     public var pmchCode: String
     
@@ -24,9 +25,9 @@ public class JKOPaymentStrategy: PaymentChannelStrategy {
     
     public var isHRP: String
     
-    public var shouldProvideKKCreditCardEnterView: Bool
+    public var shouldProvideKKCreditCardEnterView: Bool = false
     
-    public var shouldProvidePaymentCreditCardEnterVC: Bool
+    public var shouldProvidePaymentCreditCardEnterVC: Bool = false
     
     public var currency: Currency
     
@@ -45,10 +46,10 @@ public class JKOPaymentStrategy: PaymentChannelStrategy {
     public var card: CreditCard?
     
     public var acceptedCardTypes: [CreditCardType]
-    
+        
     public var paymentFlowEventDelegate: PaymentFlowEventDelegate?
     
-    required public init?(initParameters: PaymentStrategyInitializeParameters) {
+    public required init?(initParameters: PaymentStrategyInitializeParameters) {
         self.id = initParameters.id
         self.pmchCode = initParameters.pmchCode
         self.receiveMethod = initParameters.receiveMethod
@@ -61,26 +62,14 @@ public class JKOPaymentStrategy: PaymentChannelStrategy {
         self.paymentFlowEventDelegate = initParameters.paymentFlowEventDelegate
     }
     
-    public func makePayment<T>(auth: T, userSelectedCurrency: Currency, orderData: PaymentService.OrderData, cartItemsData: PaymentService.ProductData, paymentStatusLogGroupId: Int?, paymentPagePresenter: PaymentPagePresentDelegate) -> Promise<Void> {
-        firstly {
-            paymentFlowEventDelegate?.paymentFlowBegin(event: .dataPrepareStart)
-            
-            let parameter = PaymentJKOPaymentParameter(
-                auth: auth,
-                payment: self,
-                orderData: orderData,
-                cartItemsData: cartItemsData,
-                userSelectedCurrency: userSelectedCurrency,
-                paymentStatusLogGroupId: paymentStatusLogGroupId
-            )
-            
-            paymentFlowEventDelegate?.paymentFlowExecuting(event: .prepareToCallPaymentAuthAPI)
-            return callPaymentJKOPaymentWebAPI(with: parameter)
-            paymentFlowEventDelegate?.paymentFlowBegin(event: .dataPrepareDone)
-        }
+    public func makePayment() {
+        // TODO
+        print("JKO make payment")
     }
     
-    public func isPaymentAppOrServiceSupported() -> Bool {
-        <#code#>
+    public func paymentResponse() {
+        // TODO
+        print("payment response")
     }
+    
 }

@@ -8,15 +8,7 @@
 import Foundation
 import PromiseKit
 
-public protocol PaymentPagePresentDelegate {
-    func presentBySafari(url: URL,
-                         paymentNotificationName: Notification.Name,
-                         safariViewDidFinish: (() -> Void)?) -> Promise<URL>
-    
-    func presentByWKWebView(url: URL,
-                            postData: [String: Any]?,
-                            paymentNotificationName: Notification.Name,
-                            webViewDidFinish: (() -> Void)?) -> Promise<URL>
+public protocol PaymentPagePresentDelegate: AnyObject {
     
     func applicationOpenURL(urlString: String,
                             paymentNotificationName: Notification.Name) -> Promise<URL>
