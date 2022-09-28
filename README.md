@@ -19,18 +19,13 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'KKPayment'
 ```
-
-## Question
-1. applicationOpenURL 是哪邊來 第一次 call 完 payment api 拿到？
-2. 還需要 call payment return 嗎？，如果不是，是透過 webview 溝通回 app ?
-
+## Overall
+透過新增 paymentStrategy 並 register，讓 paymentService 擁有各種 payment 可以使用。
+目前都先 mock return data 來示範用。
+還有些東西尚未處理，像是卡片檢查、網路庫導入、等等。 
 
 ## Idea
-1. finish checkout
-2. call payment auth (sdk)
-3. get redirect url (sdk)
-4. web view open it
-5. receive result message
+架構 UML: https://app.diagrams.net/#G1bSxzp0JeqTh5gc8Wiec2ps7AVgoxFU3E
 
 ## Author
 
